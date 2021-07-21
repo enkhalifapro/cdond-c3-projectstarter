@@ -134,10 +134,10 @@ jobs:
       - checkout
       # Restore from cache
       - restore_cache:
-          keys: [ backend-test ]
+          keys: [ backend-scan ]
       # Your job code here
       - run:
-          name: Back-end test
+          name: Back-end scan
           command: |
             # Your code here
             cd backend
@@ -319,8 +319,8 @@ workflows:
           requires: [ build-frontend ]
       - test-backend:
           requires: [ build-backend ]
-#      - scan-backend:
-#          requires: [ build-backend ]
+      - scan-backend:
+          requires: [ build-backend ]
       - scan-frontend:
           requires: [ build-frontend ]
 #      - deploy-infrastructure:

@@ -85,6 +85,7 @@ jobs:
           command: |
             # Your code here
             cd frontend
+            npm install
             npm run test
 
   test-backend:

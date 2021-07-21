@@ -36,7 +36,7 @@ jobs:
   build-frontend:
     docker:
       - image: circleci/node:13.8.0
-    working_directory: /home/circleci/project/frontend
+    working_directory: /home/circleci/project/frontend/frontend
     steps:
       - checkout
       - restore_cache:
@@ -45,9 +45,7 @@ jobs:
           name: Build front-end
           command: |
             # Your code here
-            pwd
-            ls
-            #npm run build
+            npm run build
       - save_cache:
           paths: [ frontend/node_modules ]
           key: frontend-build

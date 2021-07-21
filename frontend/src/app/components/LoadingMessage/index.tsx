@@ -12,7 +12,7 @@ export class LoadingMessage extends Component<LoadingMessage.Props> {
   render() {
     return (
       <div className={style.loading}>
-        <span>{this.props.message}?</span>
+        <span>{this.props.message}</span>
       </div>
     );
   }

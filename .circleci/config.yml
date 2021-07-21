@@ -140,7 +140,8 @@ jobs:
           name: Back-end test
           command: |
             # Your code here
-            npm run test
+            cd backend
+            npm audit --audit-level=critical
 
 
 #  deploy-infrastructure:

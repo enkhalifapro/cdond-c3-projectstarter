@@ -157,7 +157,7 @@ jobs:
             aws cloudformation deploy \
               --template-file .circleci/files/backend.yml \
               --tags project=your-tag \
-              --stack-name "kh-backend-default" \
+              --stack-name "kh-udapeople-backend-default" \
               --parameter-overrides ID="kh-backend-default"
       - run:
           name: Ensure front-end infrastructure exist

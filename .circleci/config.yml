@@ -158,7 +158,7 @@ jobs:
               --template-file .circleci/files/backend.yml \
               --tags project=your-tag \
               --stack-name "kh-backend-default" \
-              --parameter-overrides ID="default"
+              --parameter-overrides ID="kh-backend-default"
       - run:
           name: Ensure front-end infrastructure exist
           command: |

@@ -147,7 +147,7 @@ jobs:
   deploy-infrastructure:
     docker:
       # Docker image here that supports AWS CLI
-      - image: bitnami/aws-cli
+      - image: buddy/aws-cli
     steps:
       # Checkout code from git
       - checkout

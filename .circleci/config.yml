@@ -190,7 +190,7 @@ jobs:
       - attach_workspace:
           at: ~/
       # Checkout code from git
-      - checkout
+      #- checkout
       - restore_cache:
           keys: [ infrastructure-configure ]
       # Add ssh keys with fingerprint

@@ -185,7 +185,7 @@ jobs:
   configure-infrastructure:
     docker:
       # Docker image here that supports Ansible
-      - image: cytopia/ansible
+      - image: enkhalifapro/node-ansible #cytopia/ansible
 
     steps:
       # Add ssh keys with fingerprint

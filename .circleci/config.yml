@@ -199,8 +199,8 @@ jobs:
           name: Install dependencies
           command: |
             # Your code here
-            cd backend
-            npm install
+            # cd backend
+            # npm install
       - run:
           name: Configure server
           command: |
@@ -208,7 +208,7 @@ jobs:
             cd .circleci/ansible
             pwd
             ls
-            cat inventory.txt
+            cat ~/project/.circleci/ansible/inventory.txt
             # ansible-playbook configure-server.yml -i inventory.txt
       # Here's where you will add some code to rollback on failure
 #

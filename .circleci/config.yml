@@ -206,6 +206,8 @@ jobs:
           command: |
             # Your code here
             cd .circleci/ansible
+            pwd
+            ls
             ansible-playbook configure-server.yml -i inventory.txt
       # Here's where you will add some code to rollback on failure
 #

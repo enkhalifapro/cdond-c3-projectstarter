@@ -207,7 +207,6 @@ jobs:
           name: Configure server
           command: |
             # Your code here
-            cd /tmp/workspace
             pwd
             ls
             # cat ~/inventory.txt

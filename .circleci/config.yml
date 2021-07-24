@@ -185,7 +185,7 @@ jobs:
   configure-infrastructure:
     docker:
       # Docker image here that supports Ansible
-      - image: ansible/ansible-runner
+      - image: cytopia/ansible
 
     steps:
       # Add ssh keys with fingerprint

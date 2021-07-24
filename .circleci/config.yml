@@ -175,10 +175,6 @@ jobs:
             aws ec2 describe-instances \
                --query 'Reservations[*].Instances[*].PublicIpAddress' \
                --output text >> inventory.txt
-      - run:
-          name: Add tmp dir
-          command: |
-            mkdir ~/tmp
 
       - persist_to_workspace:
           root: ~/
@@ -214,7 +210,7 @@ jobs:
             # Your code here
             # pwd
             ls
-            # cat ~/inventory.txt
+            cat project/inventory.txt
             # ansible-playbook configure-server.yml -i inventory.txt
       # Here's where you will add some code to rollback on failure
 #

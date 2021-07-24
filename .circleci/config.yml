@@ -193,7 +193,7 @@ jobs:
 
     steps:
       - attach_workspace:
-          at: ~/tmp
+          at: ~/project
       # Checkout code from git
       #- checkout
       - restore_cache:

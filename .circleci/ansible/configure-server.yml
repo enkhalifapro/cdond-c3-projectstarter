@@ -15,9 +15,9 @@
       wait_for_connection:
         timeout: 600
 
-#    - name: "install python for Ansible."
-#      # Your code here
-#      echo Hassan
+    - name: "install python for Ansible."
+      # Your code here
+      raw: sudo apt-get -y install python
 
   roles:
     # Your code here
